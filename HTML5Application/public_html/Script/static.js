@@ -56,8 +56,7 @@ for(let count=0; count <= size; count++)
     let w_id = 0;
     
     let sp = Math.random()*1;
-    color = 'null';
-    let class_color;
+    let class_color= 'null';
     
     if(sp > 0 && sp < 0.5)
     {
@@ -82,6 +81,11 @@ for(let count=0; count <= size; count++)
             let bgcolor_count = Math.round(Math.random()*2);
             let bgcolor = 'null';
             
+            let item_x = grid_x[index_x];
+            let item_y = grid_y[index_y];
+            
+            
+            
             switch(bgcolor_count){
                 case 0:
                     bgcolor = 'yellow';
@@ -100,6 +104,7 @@ for(let count=0; count <= size; count++)
         {
             let weapon = new Weapon(w_id, item_x, item_y, class_color);
             item_array.push(weapon); 
+            
             item_create(grid_x, grid_y, index_x, index_y, w_id, bgcolor);
         }
 
@@ -140,7 +145,7 @@ function uwu_color(time)
 
 
 
-
+color_change();
 
 async function color_change(){
 
