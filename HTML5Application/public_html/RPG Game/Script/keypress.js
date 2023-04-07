@@ -5,6 +5,8 @@
 
 
 
+
+// Prüft wenn eine Taste gedrückt wurde
  document.addEventListener('keydown', (event) => {
      var name = event.key;
      var code = event.code;
@@ -39,9 +41,12 @@
 
 
     function player_move_left(){
+
+        // Holt die Position vom Element
         let posx = $('#player').css('left');
         let posy = $('#player').css('top');
         
+        // Löscht 'px' und wandelt den String in eine Variable um
         posx = posx.replace('px', '');
         posx = Number(posx);
         
@@ -50,6 +55,7 @@
         
         posx -= 50;
         
+        // Gibt die veränderte Variable zum Element zuück
         $('#player').css('left', posx +'px');
         
         
@@ -106,7 +112,7 @@
 
     
     
-     
+    // Die schleife wiederholt einen betimmten Script-abschnitt für eine bestimmmte Anzahl
     for(let search=0; search < item_array.length; search++)
     {
         let player_x = $('#player').css('left');
@@ -118,16 +124,18 @@
         player_y = player_y.replace('px', '');
         player_y = Number(player_y);
 
+        
         for(let i=0; i < item_array.length; i++)
         {
-
+            // Holt die Daten aus dem Constructor Menü
             let item_x = item_array[i].item_x;
             let item_y = item_array[i].item_y;
             let item_id = item_array[i].w_id;
            
-            
+            // Prüft ob die Daten mit dem Element PLayer überein stimmen
             if(item_x == player_x && item_y == player_y)
             {
+               // Löscht ein Element aus dem Document
                $('#weapon'+ item_id).remove();  
             }
         }
