@@ -7,6 +7,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : Kyoko
 */
 
+table{
+    height: 400px;
+}
+
+
 
 table, th, td, tr{
   border: 1px solid black;
@@ -16,3 +21,29 @@ table, th, td, tr{
 th{
     width: 300px;
 }
+
+
+#select_menu{
+    position: absolute;
+    left: 20px;
+    top: 470px;
+    width: 200px;
+}
+
+#rezepte_details{
+    position: absolute;
+    left: 240px;
+    top: 470px;
+    width: 480px;
+    height: 200px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+

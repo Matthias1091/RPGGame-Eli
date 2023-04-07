@@ -11,7 +11,7 @@
     $('#menu').css('position', 'absolute');
     $('#menu').css('left', '20px');
     $('#menu').css('top', '60px');
-    $('#menu').css('width', '600px');
+    $('#menu').css('width', '700px');
     $('#menu').css('height', '200px');
 
 
@@ -20,11 +20,10 @@
     $('#generate').css('position', 'absolute');
     $('#generate').css('left', '20px');
     $('#generate').css('top', '20px');
-    $('#generate').css('width', '600px');
+    $('#generate').css('width', '700px');
     $('#generate').css('height', '40px');
     
     
-
 
                                                                                                                                                                                                                                            
     var vorspeiße = new Array('Kürbis(kern)suppe', 'Kartoffelsuppe', 'Gemüsesuppe', 'Nudelsuppe', 'Kürbiscremesuppe', 'Knoblauchsuppe', 'Karottensuppe', 'Griesnockerlsuppe');
@@ -34,7 +33,10 @@
 
 
 
+
+
     $('#generate').click(function(){
+        $('#select_menu').empty();
         /*
         let index = 0;
         let menu = [[],[],[],[],[],[],[]];
@@ -47,19 +49,7 @@
         
         console.log(menu)
         */
-        
-        /*
-        let montag_v = Math.round(Math.random()*vorspeiße.size);
-        let montag_h = Math.round(Math.random()*hauptspeiße.size);
-        let montag_b = Math.round(Math.random()*beilagen.size);
-        let montag_n = Math.round(Math.random()*nachspeiße.size);
-        */
-        
-        
-        
-     
-        
-       
+
        
         var montag_v = Math.round(Math.random()*vorspeiße.length);
         var montag_h = Math.round(Math.random()*hauptspeiße.length);
@@ -105,38 +95,122 @@
         $('#montag_beilage').text(beilage[montag_b]);
         $('#montag_nachspeise').text(nachspeiße[montag_n]);
         
+        $('#select_menu').append("<option>Select Menu</option>");
+        $('#select_menu').append("<option name='mo_v' id='mo_v'>"+vorspeiße[montag_v]+"</option>");
+        $('#select_menu').append("<option name='mo_h' id='mo_h'>"+hauptspeiße[montag_h]+"</option>");
+        $('#select_menu').append("<option name='mo_b' id='mo_b'>"+beilage[montag_b]+"</option>");
+        $('#select_menu').append("<option name='mo_n' id='mo_n'>"+nachspeiße[montag_n]+"</option>");
+
         $('#dienstag_vorspeise').text(vorspeiße[dienstag_v]);
         $('#dienstag_hauptspeise').text(hauptspeiße[dienstag_h]);
         $('#dienstag_beilage').text(beilage[dienstag_b]);
         $('#dienstag_nachspeise').text(nachspeiße[dienstag_n]);
         
+        $('#select_menu').append("<option>"+vorspeiße[dienstag_v]+"</option>");
+        $('#select_menu').append("<option>"+hauptspeiße[dienstag_h]+"</option>");
+        $('#select_menu').append("<option>"+beilage[dienstag_b]+"</option>");
+        $('#select_menu').append("<option>"+nachspeiße[dienstag_n]+"</option>");       
+        
+
         $('#mittwoch_vorspeise').text(vorspeiße[mittwoch_v]);
         $('#mittwoch_hauptspeise').text(hauptspeiße[mittwoch_h]);
         $('#mittwoch_beilage').text(beilage[mittwoch_b]);
         $('#mittwoch_nachspeise').text(nachspeiße[mittwoch_n]);
+        
+        $('#select_menu').append("<option>"+vorspeiße[mittwoch_v]+"</option>");
+        $('#select_menu').append("<option>"+hauptspeiße[mittwoch_h]+"</option>");
+        $('#select_menu').append("<option>"+beilage[mittwoch_b]+"</option>");
+        $('#select_menu').append("<option>"+nachspeiße[mittwoch_n]+"</option>");         
+        
         
         $('#donnerstag_vorspeise').text(vorspeiße[donnerstag_v]);
         $('#donnerstag_hauptspeise').text(hauptspeiße[donnerstag_h]);
         $('#donnerstag_beilage').text(beilage[donnerstag_b]);
         $('#donnerstag_nachspeise').text(nachspeiße[donnerstag_n]);
        
+        $('#select_menu').append("<option>"+vorspeiße[donnerstag_v]+"</option>");
+        $('#select_menu').append("<option>"+hauptspeiße[donnerstag_h]+"</option>");
+        $('#select_menu').append("<option>"+beilage[donnerstag_b]+"</option>");
+        $('#select_menu').append("<option>"+nachspeiße[donnerstag_n]+"</option>");         
+        
         $('#freitag_vorspeise').text(vorspeiße[freitag_v]);
         $('#freitag_hauptspeise').text(hauptspeiße[freitag_h]);
         $('#freitag_beilage').text(beilage[freitag_b]);
         $('#freitag_nachspeise').text(nachspeiße[freitag_n]);
+        
+        $('#select_menu').append("<option>"+vorspeiße[freitag_v]+"</option>");
+        $('#select_menu').append("<option>"+hauptspeiße[freitag_h]+"</option>");
+        $('#select_menu').append("<option>"+beilage[freitag_b]+"</option>");
+        $('#select_menu').append("<option>"+nachspeiße[freitag_n]+"</option>"); 
         
         $('#samstag_vorspeise').text(vorspeiße[samstag_v]);
         $('#samstag_hauptspeise').text(hauptspeiße[samstag_h]);
         $('#samstag_beilage').text(beilage[samstag_b]);
         $('#samstag_nachspeise').text(nachspeiße[samstag_n]);
         
+        $('#select_menu').append("<option>"+vorspeiße[samstag_v]+"</option>");
+        $('#select_menu').append("<option>"+hauptspeiße[samstag_h]+"</option>");
+        $('#select_menu').append("<option>"+beilage[samstag_b]+"</option>");
+        $('#select_menu').append("<option>"+nachspeiße[samstag_n]+"</option>"); 
+
         $('#sonntag_vorspeise').text(vorspeiße[sonntag_v]);
         $('#sonntag_hauptspeise').text(hauptspeiße[sonntag_h]);
         $('#sonntag_beilage').text(beilage[sonntag_b]);
         $('#sonntag_nachspeise').text(nachspeiße[sonntag_n]);
+        
+        $('#select_menu').append("<option>"+vorspeiße[sonntag_v]+"</option>");
+        $('#select_menu').append("<option>"+hauptspeiße[sonntag_h]+"</option>");
+        $('#select_menu').append("<option>"+beilage[sonntag_b]+"</option>");
+        $('#select_menu').append("<option class='menu_option'>"+nachspeiße[sonntag_n]+"</option>"); 
 
+
+
+        function get_option(a){
+        
+        for(var i = 0;i < document.getElementById("select_menu").length;i++){
+            if($(".menu_option").attr('value') == a){
+                let selected = document.getElementById("select_menu").selectedIndex = i;
+                console.log(selected)
+            }
+            
+        }
+
+        };
+        
+        
+                
+    $(document.body).on('click', '*', function(e) {
+        var find_option = $('#menu_select').find('option')
+        var get_id = $('#'+find_option).attr('id');
+        var get_value = $('#'+get_id).attr('value')
+        console.log('get button id '+get_id);
+        e.stopPropagation();    
+    });
     
+    
+    
+        
+        $('.menu_option').click(function(){
+            let a = $('.menu_option').attr('value');
+           get_option(a) 
+            
+        })
+        
 
+        
+        
+        //let vor_array = new Array(mo_v, di_v, mi_v, do_v, f_v, sa_v, so_v);
+        
+        //vorspeise_rezept(vor_array, value);
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         $('#send_email').click(function(){
         
@@ -161,6 +235,7 @@
 
 
 
+    
 
     }); 
     
