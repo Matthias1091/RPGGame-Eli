@@ -13,7 +13,7 @@
     $('#menu').css('top', '60px');
     $('#menu').css('width', '600px');
     $('#menu').css('height', '200px');
-    $('#menu').css('border', '1px solid black');
+
 
     
     $('body').append("<button id='generate'>Generate Menu</button>");
@@ -24,22 +24,13 @@
     $('#generate').css('height', '40px');
     
     
-    
-    $('body').append("<input id='send_email' type='submit'>");
-    $('#send_email').css('position', 'absolute');
-    $('#send_email').css('left', '20px');
-    $('#send_email').css('top', '270px');
-    $('#send_email').css('width', '600px');
-    $('#send_email').css('height', '40px');
-    
-    
 
 
-    
-    var vorspeiße = new Array('Gemüsesuppe', 'Nudelsuppe', 'Kürbiscremesuppe', 'Knoblauchsuppe', 'Karottensuppe');
-    var hauptspeiße = new Array('Schnitzel', 'Reis Fleich', 'Gulasch');
-    var beilage = new Array('Reis', 'Kartoffelpüreh', 'Salat');
-    var nachspeiße = new Array('Pudding', 'Kuchen', 'Eis');
+                                                                                                                                                                                                                                           
+    var vorspeiße = new Array('Kürbis(kern)suppe', 'Kartoffelsuppe', 'Gemüsesuppe', 'Nudelsuppe', 'Kürbiscremesuppe', 'Knoblauchsuppe', 'Karottensuppe', 'Griesnockerlsuppe');
+    var hauptspeiße = new Array('Ziebelrostbraten', 'Rindsrouladen', 'Sushi', 'Pizza Toast', 'Pizzabrötchen', 'Tomatenrissotto', 'Fleckerlspeise', 'Kartoffelsalat', 'Calzone', 'Palatschinken', 'Instantnudeln', 'Bratnudeln mit Erdnüssen', 'Chinesische Eiernudeln', 'Bratnudeln (evntl mit Shrimps)', 'Gebratenes Rindfleisch mit Ziebeln', 'Frühlingsrollen', 'Spagetti alla chitarra', 'Spagetti Carbonara', 'Sauerbraten', 'Cordon Bleu', 'Spagetti Bolonese', 'Lasagna', 'Schnitzel', 'Reis Fleich', 'Gulasch', 'Spagetti', 'Fleischlaberl', 'Bernerwürstel', 'Chilli con Carne', 'Fisch', 'Rindfleisch', 'Semmelknödel', 'Geflügel', 'Kalbsramgulasch', 'Rinderrouladen');
+    var beilage = new Array('Apfelmus', 'Omlette', 'Eierspeis', 'Eiernudeln', '(Karotten) Risotto', 'Eiernockerl','Spätzle', 'Serviettenknödel', 'Gnocchi', 'Quark Käse Puffer', 'Mais', 'Kohlrabi', 'Gemüse', 'Brokoli', '(Geröstete) Paprikashoten', 'Gegrillte Zucchini', 'Lauch Meerrettich Rahm', 'Gurkensalat', 'Sauerkraut (Salat)', 'Tomaten(Kräuter)Salat', 'Wurstsalat', 'Gepäck', 'Karottensalat', 'Weiswurst', 'Sauerkraut', 'Kartoffelstampf', 'Kartoffelecken', 'Kartoffel-Gratin', 'Kartoffelsalat', 'Reis', 'Kartoffelpüreh', 'Salat', 'Kartoffeln', 'Nudeln');
+    var nachspeiße = new Array('Süßkartoffel Apfelkuchen', 'Brownies', 'Obstsalat', 'Apfel Quark Kuchen', 'Skyr Dessert', 'Kokusreis Kugeln', 'Crepes Suzette', 'Crepes', 'Krapfen', 'Apfelstreuselkuschen', 'Apfelmus', 'Butterkushen', 'Bienenstich', 'Maccarons', 'Marillenknödel', 'Muffins', 'Apfelstrudel', 'Biskuitrolle', 'Himbeer Puddingcreme Schnitte', 'Tiramisu', 'Pudding', 'Kuchen', 'Eis');
 
 
 
