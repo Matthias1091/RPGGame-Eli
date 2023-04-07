@@ -1,0 +1,18 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 06.04.2023, 23:29:45
+    Author     : Kyoko
+*/
+
+
+table, th, td, tr{
+  border: 1px solid black;
+  width: 100%;
+}
+
+th{
+    width: 300px;
+}
